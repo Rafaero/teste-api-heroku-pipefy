@@ -12,8 +12,3 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(cors())
 app.use(routes)
-
-
-app.listen(3000, () => {
-    console.log('Express start at http://localhost:3000')
-})
