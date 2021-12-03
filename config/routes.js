@@ -17,7 +17,7 @@ routes.post('/add', (req, res) => {
 
     } else {
 
-        data.push(body)
+        data.push(body.data.card.id)
         return res.json(body);
 
     }
