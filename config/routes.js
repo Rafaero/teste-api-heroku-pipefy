@@ -4,7 +4,6 @@ const routes = express.Router();
 let data = []
 
 routes.get('/', (req, res) => {
-    console.log(data)
     return res.json(data)
 })
 
@@ -19,6 +18,7 @@ routes.post('/add', (req, res) => {
     } else {
 
         data.push(body)
+        console.log(data)
         return res.json(body);
 
     }
