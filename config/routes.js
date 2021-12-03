@@ -4,6 +4,7 @@ const routes = express.Router();
 let data = []
 
 routes.get('/', (req, res) => {
+    console.log(data)
     return res.json(data)
 })
 
