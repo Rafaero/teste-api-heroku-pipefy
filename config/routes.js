@@ -18,7 +18,7 @@ routes.post('/add', (req, res) => {
     } else {
 
         data.push(body)
-        return res.json(body.data);
+        return res.json(body);
 
     }
 })
