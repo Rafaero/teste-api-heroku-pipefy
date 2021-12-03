@@ -4,7 +4,7 @@ const routes = express.Router();
 let id = "";
 
 routes.get('/', (req, res) => {
-    return res.json(data)
+    return res.json(id)
 })
 
 routes.post('/add', (req, res) => {
