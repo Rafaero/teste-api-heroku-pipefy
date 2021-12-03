@@ -1,7 +1,7 @@
 const express = require('express');
 const routes = express.Router();
 
-let id = "";
+let id = [];
 
 routes.get('/', (req, res) => {
     return res.json(id)
