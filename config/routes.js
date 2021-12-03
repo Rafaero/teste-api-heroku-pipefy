@@ -18,6 +18,7 @@ routes.post('/add', (req, res) => {
     } else {
 
         id = body.data.card.id
+        res.json(id);
         const options = {
             method: 'POST',
             headers: {
