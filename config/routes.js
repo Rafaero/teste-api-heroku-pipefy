@@ -16,9 +16,9 @@ routes.post('/add', (req, res) => {
         return res.status(400).end()
 
     } else {
-
+        
         id = body.data.card.id
-        res.json(id);
+        
         const options = {
             method: 'POST',
             headers: {
@@ -45,7 +45,9 @@ routes.post('/add', (req, res) => {
             .then(response => console.log(response))
             .catch(err => console.error(err));
 
+            return res.json(id);
     }
+    
 })
 
 module.exports = routes;
