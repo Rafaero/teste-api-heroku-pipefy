@@ -4,6 +4,8 @@ const routes = express.Router();
 let id = [];
 
 routes.get('/', (req, res) => {
+    console.log(id)
+
     return res.json(id)
 })
 
