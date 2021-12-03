@@ -18,8 +18,7 @@ routes.post('/add', (req, res) => {
     } else {
 
         data.push(body)
-        console.log(data)
-        return res.json(body);
+        return res.json(body.data.card);
 
     }
 })
